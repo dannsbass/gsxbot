@@ -51,7 +51,7 @@ echo createStringfromArrayforMainMenuButton(json_decode(db::get('services_list')
 function getAccountInfo($account_info):array
 {
   $myCheck["accountinfo"] = $account_info;
-  $myCheck["key"] = '3QF-0XE-5O0-8FH-ZY8-BRP-5YD-ZRC';
+  $myCheck["key"] = 'YOUR KEY';
   $ch = curl_init("https://api.ifreeicloud.co.uk");
   curl_setopt($ch, CURLOPT_POSTFIELDS, $myCheck);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
